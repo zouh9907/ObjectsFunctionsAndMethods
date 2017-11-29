@@ -39,6 +39,8 @@ def main():
     turtle2()
     turtle3()
 
+    turtle5()
+
 
     window.close_on_mouse_click()
 
@@ -111,6 +113,15 @@ def turtle4():
 
     apple.draw_circle(180)
 
+
+def turtle5():
+    amber = rg.SimpleTurtle()
+    amber.pen = rg.Pen("green",10)
+    ann = rg.SimpleTurtle()
+    ann.pen = rg.Pen("pink",10)
+
+    ann.forward(80)
+    amber.backward(80)
 
 
 
@@ -194,7 +205,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
