@@ -222,9 +222,9 @@ def try_methods_and_functions():
     amber.speed = 1
     draw_many_squares(amber, 2, 100, 30)
 
-    amber.speed = 1
+    amber.speed = 5
     amber.pen = rg.Pen('red',5)
-    draw_many_squares(amber, 5, 50, 15)
+    draw_many_squares(amber, 10, 50, 15)
 
     amber.speed = 100
     amber.pen = rg.Pen('red',35)
