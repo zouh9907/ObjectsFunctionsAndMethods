@@ -6,7 +6,7 @@ This module lets you practice  ** using objects **, including:
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and Huiruo Zou.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 import rosegraphics as rg
@@ -15,6 +15,7 @@ import rosegraphics as rg
 def main():
     two_circles()
     circle_and_rectangle()
+    lines()
 
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
@@ -129,6 +130,26 @@ def circle_and_rectangle():
 
 
 def lines():
+    window = rg.RoseWindow()
+
+    point_start1 = rg.Point(100,200)
+    point_end1 = rg. Point(121,200)
+    line1 = rg.Line(point_start1,point_end1)
+    line1.thickness = 5
+    center_point = line1.get_midpoint()
+    line1.attach_to(window)
+
+    print(center_point)
+    print(center_point.x)
+    print(center_point.y)
+
+    point_start2 = rg.Point(300,50)
+    point_end2 = rg.Point(150,220)
+    line2 = rg.Line(point_start2,point_end2)
+    line2.attach_to(window)
+
+    window.render()
+    window.close_on_mouse_click()
     """
     -- Constructs a rg.RoseWindow.
     -- Constructs and draws on the window two rg.Lines such that:
@@ -151,7 +172,7 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
 
