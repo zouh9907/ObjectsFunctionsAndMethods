@@ -87,7 +87,6 @@ def main():
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
-
     window.close_on_mouse_click()
 
 
@@ -176,7 +175,7 @@ def turtle3():
 
 def try_methods():
     apple = rg.SimpleTurtle()
-    apple.pen = rg.Pen('brown',5)
+    apple.pen = rg.Pen('brown', 5)
 
     apple.forward(150)
     apple.left(90)
@@ -216,28 +215,25 @@ def try_functions():
 
 def try_methods_and_functions():
     amber = rg.SimpleTurtle()
-    amber.pen = rg.Pen('blue',5)
+    amber.pen = rg.Pen('blue', 5)
 
     amber.backward(150)
     amber.speed = 1
     draw_many_squares(amber, 2, 100, 30)
 
     amber.speed = 5
-    amber.pen = rg.Pen('red',5)
+    amber.pen = rg.Pen('red', 5)
     draw_many_squares(amber, 10, 50, 15)
 
     amber.speed = 100
-    amber.pen = rg.Pen('red',35)
+    amber.pen = rg.Pen('red', 35)
     draw_many_squares(amber, 8, 300, 60)
 
-    amber.pen = rg.Pen('black',3)
+    amber.pen = rg.Pen('black', 3)
 
     amber.backward(200)
     amber.draw_circle(30)
     amber.draw_square(50)
-
-
-
 
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen

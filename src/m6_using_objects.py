@@ -132,9 +132,9 @@ def circle_and_rectangle():
 def lines():
     window = rg.RoseWindow()
 
-    point_start1 = rg.Point(100,200)
-    point_end1 = rg. Point(121,200)
-    line1 = rg.Line(point_start1,point_end1)
+    point_start1 = rg.Point(100, 200)
+    point_end1 = rg. Point(121, 200)
+    line1 = rg.Line(point_start1, point_end1)
     line1.thickness = 5
     center_point = line1.get_midpoint()
     line1.attach_to(window)
@@ -143,9 +143,9 @@ def lines():
     print(center_point.x)
     print(center_point.y)
 
-    point_start2 = rg.Point(300,50)
-    point_end2 = rg.Point(150,220)
-    line2 = rg.Line(point_start2,point_end2)
+    point_start2 = rg.Point(300, 50)
+    point_end2 = rg.Point(150, 220)
+    line2 = rg.Line(point_start2, point_end2)
     line2.attach_to(window)
 
     window.render()

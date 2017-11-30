@@ -41,7 +41,6 @@ def main():
 
     turtle5()
 
-
     window.close_on_mouse_click()
 
 
@@ -109,20 +108,19 @@ def turtle3():
 
 def turtle4():
     apple = rg.SimpleTurtle()
-    apple.pen = rg.Pen('red',5)
+    apple.pen = rg.Pen('red', 5)
 
     apple.draw_circle(180)
 
 
 def turtle5():
     amber = rg.SimpleTurtle()
-    amber.pen = rg.Pen("green",10)
+    amber.pen = rg.Pen("green", 10)
     ann = rg.SimpleTurtle()
-    ann.pen = rg.Pen("pink",10)
+    ann.pen = rg.Pen("pink", 10)
 
     ann.forward(80)
     amber.backward(80)
-
 
 
 ########################################################################

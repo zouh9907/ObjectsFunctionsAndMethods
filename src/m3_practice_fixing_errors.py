@@ -39,7 +39,6 @@ def main():
     turtle_fun()
 
 
-
 def print_math():
     """ Prints some calculated values. """
     x = math.cos(math.pi)
@@ -70,6 +69,7 @@ def turtle_fun():
     alan.forward(200)
 
     window.close_on_mouse_click()
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
